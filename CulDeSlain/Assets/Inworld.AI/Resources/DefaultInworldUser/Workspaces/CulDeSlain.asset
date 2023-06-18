@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679553faa086cdc48a58556300e27230, type: 3}
+  m_Name: CulDeSlain
+  m_EditorClassIdentifier: 
+  title: CulDeSlain
+  fullName: workspaces/culdeslain
+  characters:
+  - {fileID: 11400000, guid: b1921a50a471ad643b94dbbe149f5807, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 83a834ecfe781a7469788a75d74841ef, type: 2}
+  - {fileID: 11400000, guid: e3d961957ef481f4a9f22843cb948bed, type: 2}
+  - {fileID: 11400000, guid: 3c5a660eefe9fac49874c67a9639d3b0, type: 2}
+  - {fileID: 11400000, guid: 80913923513be8548ad07fb48d06da99, type: 2}
+  scenes:
+  - {fileID: 11400000, guid: a35d2b5e8ebf1b94c82664bd7d8e8bd0, type: 2}
+  integrations:
+  - {fileID: 11400000, guid: b85dccbc8fad02544916746d27843df0, type: 2}
+  index: 0

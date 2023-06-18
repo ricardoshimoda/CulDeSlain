@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0447596b1a67de49ba5720fda0bdabe, type: 3}
+  m_Name: Amber Sinclair
+  m_EditorClassIdentifier: 
+  characterName: Amber Sinclair
+  brain: workspaces/culdeslain/characters/amber_sinclair
+  avatar: {fileID: 0}
+  workspace: workspaces/culdeslain
+  currentScene: workspaces/culdeslain/characters/amber_sinclair
+  ownerShip: 0
+  defaultThumbnail: {fileID: 2800000, guid: 350039988a1640e41b4b173f727023ed, type: 3}
+  index: 0
+  triggers: []
+  scenes:
+  - workspaces/culdeslain/scenes/cul-de-sac
+  modelUri: 
+  posUri: 
+  previewImgUri: 
+  characterID: 3321ffb9-97d3-4b0a-aeae-100016d68998
