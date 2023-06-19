@@ -75,8 +75,10 @@ namespace Inworld.Sample
         {
             if (status != InteractionStatus.HistoryChanged)
                 return;
-            if (m_ContentRT)
-                _RefreshBubbles(historyItems);
+            if (m_ContentRT) {
+                // This means that an interaction is happening
+                
+            }
         }
         #endregion
 
@@ -110,8 +112,10 @@ namespace Inworld.Sample
                         }
                     }
                 }
-                if (item.Event is TextEvent textEvent)
+                if (item.Event is TextEvent textEvent) {
+                    Debug.Log(textEvent.Text);
                     m_Bubbles[item.UtteranceId].Text = textEvent.Text;
+                }
                 if (item.Event is ActionEvent actionEvent)
                     m_Bubbles[item.UtteranceId].Text = $"<i>{actionEvent.Content}</i>";
                 _SetContentHeight();

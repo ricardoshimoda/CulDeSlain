@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ad0515a2868cd4282589144c7820fd, type: 3}
+  m_Name: Cul-de-sac
+  m_EditorClassIdentifier: 
+  fullName: workspaces/culdeslain/scenes/cul-de-sac
+  shortName: Cul-de-sac
+  description: This is the general neighborhood. It's a small, secluded space where
+    completely different people live together, each in their own houses. One of the
+    inhabitants, Slick Malone, was murdered and now {player} has to investigate his
+    murder
+  characters:
+  - workspaces/culdeslain/characters/amber_sinclair
+  - workspaces/culdeslain/characters/judy_wilcox
+  - workspaces/culdeslain/characters/malcolm_mac_thompson
+  - workspaces/culdeslain/characters/reggie_rusty_malone
+  - workspaces/culdeslain/characters/slick_malone
+  - workspaces/culdeslain/characters/police_chief
+  triggers: []
+  index: 0
