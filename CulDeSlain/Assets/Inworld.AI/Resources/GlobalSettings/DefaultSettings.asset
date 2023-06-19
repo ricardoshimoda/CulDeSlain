@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a204091dcffe61d469953fc99afdeb64, type: 3}
   m_Name: DefaultSettings
   m_EditorClassIdentifier: 
-  m_CanReceiveAudio: 1
+  m_CanReceiveAudio: 0
   m_Interruptible: 0
+  m_SaveConversation: 0
   m_ThumbnailFolder: Thumbnails
   m_AvatarFolder: Avatars
   m_CharacterDataFolder: Characters
@@ -25,4 +26,5 @@ MonoBehaviour:
   m_DefaultWorkspace: {fileID: 11400000, guid: d809abc8a24341d40ae9c288fa6ea5cb, type: 2}
   m_EnableVerboseLog: 1
   m_EnableSharedCharacters: 1
+  m_AutoSelectCharacter: 1
   m_AutoGenerateCharacter: 1
