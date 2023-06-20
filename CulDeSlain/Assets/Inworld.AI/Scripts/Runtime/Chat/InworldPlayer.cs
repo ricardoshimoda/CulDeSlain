@@ -46,13 +46,10 @@ namespace Inworld.Sample
         }
         void Update()
         {
-            if (Input.GetKeyUp(KeyCode.BackQuote))
+            if (Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Keypad1))
             {
+                // Toggles the UI
                 m_GlobalChatCanvas.SetActive(!m_GlobalChatCanvas.activeSelf);
-                if (m_CameraController)
-                    m_CameraController.enabled = !m_GlobalChatCanvas.activeSelf;
-                if (m_TriggerCanvas)
-                    m_TriggerCanvas.SetActive(!m_TriggerCanvas.activeSelf);
             }
             UpdateSendText();
         }

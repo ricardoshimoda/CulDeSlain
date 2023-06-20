@@ -27,4 +27,4 @@ MonoBehaviour:
   m_EnableVerboseLog: 1
   m_EnableSharedCharacters: 1
   m_AutoSelectCharacter: 1
-  m_AutoGenerateCharacter: 1
+  m_AutoGenerateCharacter: 0
