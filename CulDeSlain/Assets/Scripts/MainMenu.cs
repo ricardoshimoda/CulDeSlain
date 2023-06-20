@@ -12,10 +12,12 @@ public class MainMenu : MonoBehaviour
     }
     public void settings(){
         Debug.Log("SETTINGS");
+        SceneManager.LoadScene("SettingsMenu");
         
     }
     public void backToMenu(){
         Debug.Log("BACKTOMENU");
+        SceneManager.LoadScene("ArjunShaffan_Mainmenu");
         
     }
     public void quitGame(){
