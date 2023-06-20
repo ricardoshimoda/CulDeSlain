@@ -12,9 +12,12 @@ public class MainMenu : MonoBehaviour
     }
     public void settings(){
         Debug.Log("SETTINGS");
-        SceneManager.LoadScene("SettingsMenu");
+        Invoke(nameof(settingloader), 0.15f) ;
+        
         
     }
+
+    
     public void backToMenu(){
         Debug.Log("BACKTOMENU");
         SceneManager.LoadScene("ArjunShaffan_Mainmenu");
@@ -24,5 +27,9 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QUIT");
         
     }
-   
+
+    void settingloader(){
+        SceneManager.LoadScene("SettingsMenu") ;
+    }
+    
 }
