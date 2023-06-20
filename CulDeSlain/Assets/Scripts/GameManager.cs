@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI ;
 
 [Serializable]
 public class PlayerSettings {
@@ -22,6 +23,7 @@ public class PlayerSettings {
 }
 
 public class GameManager : SingletonPersistent<GameManager> {
+     public static GameManager Instance { get; private set; }
 
     public PlayerSettings PlayerSettings = new PlayerSettings();
 
@@ -63,4 +65,11 @@ public class GameManager : SingletonPersistent<GameManager> {
         yield return new WaitForSecondsRealtime(0.5f);
         SavePlayerSettings();
     }
+
+    public void changeSenitivity(float sen){
+        PlayerSettings.MouseSensitivity = sen;
+        Debug.Log(sen) ;
+        SavePlayerSettings();
+    }
+
 }
