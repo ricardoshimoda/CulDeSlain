@@ -18,7 +18,7 @@ MonoBehaviour:
   workspace: workspaces/culdeslain
   currentScene: workspaces/culdeslain/characters/amber_sinclair
   ownerShip: 0
-  defaultThumbnail: {fileID: 0}
+  defaultThumbnail: {fileID: 2800000, guid: 4dbd7a68887a437469d4972caf38921e, type: 3}
   index: 0
   triggers: []
   scenes:
@@ -26,4 +26,4 @@ MonoBehaviour:
   modelUri: 
   posUri: 
   previewImgUri: 
-  characterID: 
+  characterID: 1c06ece6-d2f8-4c41-a4e5-8b93b13e2c8c
