@@ -21,11 +21,15 @@ namespace Inworld.Sample
         [SerializeField] ChatBubble m_BubbleLeft;
         [SerializeField] ChatBubble m_BubbleRight;
         [SerializeField] TMP_InputField m_InputField;
+        [SerializeField] Transform m_SendPanel;
+        [SerializeField] Transform m_ReceivePanel;
+        [SerializeField] TMP_Text m_CharacterSpeech;
         #endregion
 
         #region Private Variables
         readonly Dictionary<string, ChatBubble> m_Bubbles = new Dictionary<string, ChatBubble>();
         readonly Dictionary<string, InworldCharacter> m_Characters = new Dictionary<string, InworldCharacter>();
+        private string utterances = string.Empty;
         #endregion
 
         #region Public Function
@@ -41,6 +45,7 @@ namespace Inworld.Sample
                 InworldAI.LogError("No Character is interacting.");
                 return;
             }
+            // Sends text to inworld
             InworldController.Instance.CurrentCharacter.SendText(m_InputField.text);
             m_InputField.text = null;
         }
@@ -52,6 +57,7 @@ namespace Inworld.Sample
         void Start()
         {
             InworldController.Instance.OnStateChanged += OnControllerStatusChanged;
+            m_CharacterSpeech = m_ReceivePanel.Find("CharacterAnswer").GetComponent<TMP_Text>();
         }
         void Update()
         {
@@ -73,12 +79,27 @@ namespace Inworld.Sample
         }
         void OnInteractionStatus(InteractionStatus status, List<HistoryItem> historyItems)
         {
+            Debug.Log("Got one interaction!");
             if (status != InteractionStatus.HistoryChanged)
                 return;
-            if (m_ContentRT) {
-                // This means that an interaction is happening
-                
+            // This means that an interaction is happening
+            // Goes into receiving mode
+            m_SendPanel.gameObject.SetActive(false);
+            m_ReceivePanel.gameObject.SetActive(true);
+            foreach (HistoryItem item in historyItems)
+            {
+                if (utterances.IndexOf(item.UtteranceId + "|") < 0 && item.Event is TextEvent textEvent && item.Event.Routing.Source.IsAgent()) {
+                    Debug.Log(textEvent.Text);
+                    m_CharacterSpeech.text += textEvent.Text;
+                }
+                utterances += item.UtteranceId + "|";
             }
+        }
+
+        public void OnNextInteration() {
+            m_SendPanel.gameObject.SetActive(true);
+            m_ReceivePanel.gameObject.SetActive(false);
+            m_CharacterSpeech.text = string.Empty;
         }
         #endregion
 
@@ -87,6 +108,9 @@ namespace Inworld.Sample
         {
             if (!m_GlobalChatCanvas.activeSelf)
                 return;
+            /*
+             * watchdog to when the player presses "enter" instead of clicking on the Send Button
+             */
             if (!Input.GetKeyUp(KeyCode.Return) && !Input.GetKeyUp(KeyCode.KeypadEnter))
                 return;
             SendText();

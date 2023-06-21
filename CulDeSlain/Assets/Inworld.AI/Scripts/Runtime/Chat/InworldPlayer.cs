@@ -33,6 +33,7 @@ namespace Inworld.Sample
         private Transform m_Passive;
         private TMPro.TMP_Text m_PassiveName;
         private bool isTalking = false;
+        
         #endregion
 
         #region Public Function
