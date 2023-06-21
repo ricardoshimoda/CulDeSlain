@@ -19,6 +19,11 @@ public class settings_menu : MonoBehaviour
 
     public void setQuality(int qualityIndex){
         
-        QualitySettings.SetQualityLevel(qualityIndex);
+        gameManager.changeQuality(qualityIndex) ;
+        
+    }
+
+    public void setFov(float fov){
+        gameManager.changeFov(fov) ;
     }
 }

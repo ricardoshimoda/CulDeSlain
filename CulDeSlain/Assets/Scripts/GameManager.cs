@@ -20,10 +20,14 @@ public class PlayerSettings {
     public float MouseSensitivity = 0.2f;
     public float ViewBobbingIntensitiy = 1f;
 
+    
+    [Header("Graphics settings")]
+
+    public int qualityIndex = 0 ;
+
 }
 
 public class GameManager : SingletonPersistent<GameManager> {
-     public static GameManager Instance { get; private set; }
 
     public PlayerSettings PlayerSettings = new PlayerSettings();
 
@@ -68,7 +72,17 @@ public class GameManager : SingletonPersistent<GameManager> {
 
     public void changeSenitivity(float sen){
         PlayerSettings.MouseSensitivity = sen;
-        Debug.Log(sen) ;
+        SavePlayerSettings();
+    }
+
+    public void changeFov(float Fov){
+        PlayerSettings.PlayerFOV = Fov;
+        SavePlayerSettings();
+    }
+
+    public void changeQuality(int quality){
+        PlayerSettings.qualityIndex = quality ;
+        QualitySettings.SetQualityLevel(quality);
         SavePlayerSettings();
     }
 
