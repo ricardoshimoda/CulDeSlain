@@ -16,4 +16,9 @@ public class settings_menu : MonoBehaviour
     public void SetSenitivity(float sen){
         gameManager.changeSenitivity(sen) ;
     }
+
+    public void setQuality(int qualityIndex){
+        
+        QualitySettings.SetQualityLevel(qualityIndex);
+    }
 }
