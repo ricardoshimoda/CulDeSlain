@@ -122,6 +122,8 @@ public class PlayerCharacter : MonoBehaviour {
         var closeness = Inworld.InworldController.Instance.CurrentCharacter != null;
         if (keyPressed && closeness) {
             playerMovement = !playerMovement;
+            Cursor.visible = !playerMovement;
+            Cursor.lockState = playerMovement? CursorLockMode.Confined:CursorLockMode.None;
         }
 
         if (!playerMovement) return;

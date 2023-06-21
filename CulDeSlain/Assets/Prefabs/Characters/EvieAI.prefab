@@ -387,6 +387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0f095b33582af489a930e6e32ba542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_CharacterName: Amber Sinclair
+  m_Portrait: {fileID: 21300000, guid: a629876a1190de647b02c56c035335fe, type: 3}
   m_Data: {fileID: 11400000, guid: c24ee2cdca2b2f84ea452fb2f1373960, type: 2}
   m_Interaction: {fileID: 0}
   m_CurrentAvatar: {fileID: 0}

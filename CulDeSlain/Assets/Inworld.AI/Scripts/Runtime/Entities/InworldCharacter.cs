@@ -16,6 +16,10 @@ namespace Inworld
     public class InworldCharacter : MonoBehaviour
     {
         #region Inspector Variables
+        [Header("Game Context")]
+        [SerializeField] public string m_CharacterName;
+        [SerializeField] public Sprite m_Portrait;
+
         [Header("Data:")]
         [SerializeField] InworldCharacterData m_Data;
         [FormerlySerializedAs("m_AudioInteraction")]

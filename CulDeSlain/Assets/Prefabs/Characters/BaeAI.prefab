@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0f095b33582af489a930e6e32ba542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_CharacterName: Judy Williams
+  m_Portrait: {fileID: 21300000, guid: b32122f229869394a93cf1fca821629e, type: 3}
   m_Data: {fileID: 11400000, guid: a2e35b9a26db33347b0936440f5146eb, type: 2}
   m_Interaction: {fileID: 0}
   m_CurrentAvatar: {fileID: 0}

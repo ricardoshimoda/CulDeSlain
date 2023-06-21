@@ -639,6 +639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0f095b33582af489a930e6e32ba542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_CharacterName: Reggie Malone
+  m_Portrait: {fileID: 21300000, guid: c7249e8df45e88444b209e9e03f10bea, type: 3}
   m_Data: {fileID: 11400000, guid: 6cf2061bf0c10e54dbc45f588b35e597, type: 2}
   m_Interaction: {fileID: 0}
   m_CurrentAvatar: {fileID: 8399173793548778242}

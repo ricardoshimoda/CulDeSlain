@@ -639,6 +639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0f095b33582af489a930e6e32ba542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_CharacterName: Boss
+  m_Portrait: {fileID: 21300000, guid: 1278f3f407fb9d842b47f94c054e2737, type: 3}
   m_Data: {fileID: 11400000, guid: 4baf58c0b3e892b42822b6eafa756e5e, type: 2}
   m_Interaction: {fileID: 0}
   m_CurrentAvatar: {fileID: 3676840581637300130}
