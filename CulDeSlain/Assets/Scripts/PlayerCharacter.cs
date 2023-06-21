@@ -42,6 +42,9 @@ public class PlayerCharacter : MonoBehaviour {
     private float RotationX = 0;
     private float RotationY = 0;
 
+    [Header("State")]
+    private bool playerMovement = true;
+
     private void Awake() {
         // Creating Controls
         Controls = new PlayerControls();
@@ -114,6 +117,14 @@ public class PlayerCharacter : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+        var keyPressed = Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Keypad1);
+        var closeness = Inworld.InworldController.Instance.CurrentCharacter != null;
+        if (keyPressed && closeness) {
+            playerMovement = !playerMovement;
+        }
+
+        if (!playerMovement) return;
 
         PlayerSettings CurrentSettings = GameManager.Instance.PlayerSettings;
 

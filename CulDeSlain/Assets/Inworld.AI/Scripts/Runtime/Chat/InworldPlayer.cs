@@ -46,7 +46,9 @@ namespace Inworld.Sample
         }
         void Update()
         {
-            if (Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Keypad1))
+            var keyPressed = Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Keypad1);
+            var closeness = InworldController.Instance.CurrentCharacter != null;
+            if (keyPressed && closeness)
             {
                 // Toggles the UI
                 m_GlobalChatCanvas.SetActive(!m_GlobalChatCanvas.activeSelf);

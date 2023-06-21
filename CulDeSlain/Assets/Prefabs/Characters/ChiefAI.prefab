@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Interaction: {fileID: 0}
   m_CurrentAvatar: {fileID: 3676840581637300130}
   m_SightAngle: 180
-  m_SightDistance: 10
+  m_SightDistance: 3
   m_SightRefreshRate: 0.25
   m_logUtterances: 0
   OnBeginSpeaking:

@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7061934951098863262
 Transform:
   m_ObjectHideFlags: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Interaction: {fileID: 0}
   m_CurrentAvatar: {fileID: 0}
   m_SightAngle: 180
-  m_SightDistance: 10
+  m_SightDistance: 3
   m_SightRefreshRate: 0.25
   m_logUtterances: 0
   OnBeginSpeaking:
