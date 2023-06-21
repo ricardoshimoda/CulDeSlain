@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro ;
 
 public class settings_menu : MonoBehaviour
 {
 
     public GameManager gameManager ;
+    public TMP_Dropdown dropDown ;
 
-    
+    void Start(){
+        dropDown.value = gameManager.PlayerSettings.qualityIndex ;
+    }
     public void SetVolume(float volume){
         Debug.Log(volume) ;
     }
