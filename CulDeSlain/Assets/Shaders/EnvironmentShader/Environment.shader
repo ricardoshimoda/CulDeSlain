@@ -57,7 +57,7 @@ Shader "Unlit/Environment"
                 fixed4 col = tex2D(_MainTex, i.uv);
                 float lum = dot(col,float3(0.299f,0.587f,0.114f)) + _BaseLuminance;
 
-                float2 ditherUV = i.uv * _DitherTex_ST.xy * _DitherTex_ST.zw;
+                float2 ditherUV = i.uv * _DitherTex_ST.xy + _DitherTex_ST.zw;
                 float dither = tex2D(_DitherTex, ditherUV);
 
                 float ramp = (lum <= clamp(dither, 0.1f, 0.9f)) ? 0.1f : 0.9f;

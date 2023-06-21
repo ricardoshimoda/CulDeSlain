@@ -28,8 +28,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DitherTex:
-        m_Texture: {fileID: 2800000, guid: 82171f83748adea4da31fc9fcee1c3c5, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 6fd55aecb53dfe546a2c9fa5a978a969, type: 3}
+        m_Scale: {x: 50, y: 50}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
@@ -37,6 +37,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BaseLuminance: 0.157
+    - _BaseLuminance: -0.069
     m_Colors: []
   m_BuildTextureStacks: []
