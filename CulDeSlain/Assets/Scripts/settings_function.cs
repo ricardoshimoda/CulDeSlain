@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class button_function : MonoBehaviour
 {
 
+
     public void LoadNextScene()
     {
-         SceneManager.LoadScene("Pause_Menu");
 
+        SceneManager.LoadScene("Pause_Menu");
+         
     }
+
+   
+
 }
