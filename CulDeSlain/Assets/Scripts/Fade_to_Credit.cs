@@ -11,6 +11,7 @@ public class Fade_to_Credit : MonoBehaviour
     // Start is called before the first frame update
     public void Load_Cred()
     {
+        Debug.Log("WORKING");
         completeLevelUI.SetActive(true);
         //SceneManager.LoadScene("Credit_Scene");
     }
