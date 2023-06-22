@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class Interact_function : MonoBehaviour
 {
     public void Interaction()
-    {
-         Debug.Log("Interactions is working");
+    {   
+        
+        // Do nothing
+        // Button is just there as a user indication
     }
 }
