@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     public void playGame(){
-        Debug.Log("START");
+        Invoke(nameof(Resumeloader), 0.15f) ;
         
         
     }
-
+    
     public void quitGame(){
         Application.Quit() ;
         
     }
 
+
+    void Resumeloader(){
+        SceneManager.LoadScene("HUD") ;
+    }
     
 }

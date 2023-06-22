@@ -8,8 +8,7 @@ public class button_function : MonoBehaviour
 
     public void LoadNextScene()
     {
-         
-         SceneManager.LoadScene("Settings");
+         SceneManager.LoadScene("Pause_Menu");
 
     }
 }
